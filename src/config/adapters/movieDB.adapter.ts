@@ -4,7 +4,6 @@ import { AxiosAdapter } from "./http/axios.adapter";
 export const movieDBFetcher = new AxiosAdapter({
     baseUrl: 'https://api.themoviedb.org/3/movie',
     params: {
-        //api_key: '581b203322e3482ef032177f571c233b',
         api_key: THE_MOVIE_DB_KEY ?? 'no-key',
         language: 'es'
     }
